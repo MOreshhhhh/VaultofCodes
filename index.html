@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Morya | Vault of Codes</title>
+  <style>
+    /* -------------------------
+       GLOBAL STYLES
+    ------------------------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #eef2ff, #e0e7ff);
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: linear-gradient(120deg, #4f46e5, #9333ea);
+      color: white;
+      border-radius: 0 0 40px 40px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+      animation: fadeInDown 1s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      letter-spacing: 1px;
+      font-weight: 700;
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      opacity: 0.9;
+      margin-top: 0.3rem;
+    }
+
+    main {
+      flex: 1;
+      width: 100%;
+      max-width: 1200px;
+      padding: 3rem 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* -------------------------
+       ASSIGNMENTS SECTION
+    ------------------------- */
+    .assignments {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      width: 100%;
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(12px);
+      border-radius: 20px;
+      padding: 2rem;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .card h2 {
+      font-size: 1.3rem;
+      color: #1e1b4b;
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #444;
+      margin-bottom: 1.2rem;
+      line-height: 1.5;
+    }
+
+    .btn {
+      display: inline-block;
+      background: linear-gradient(90deg, #4f46e5, #9333ea);
+      color: white;
+      text-decoration: none;
+      padding: 10px 22px;
+      border-radius: 8px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background: linear-gradient(90deg, #9333ea, #4f46e5);
+      transform: scale(1.05);
+    }
+
+    /* -------------------------
+       FOOTER
+    ------------------------- */
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #1e1b4b;
+      color: white;
+      width: 100%;
+      border-radius: 40px 40px 0 0;
+      font-size: 0.9rem;
+    }
+
+    /* -------------------------
+       ANIMATIONS
+    ------------------------- */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* -------------------------
+       RESPONSIVE
+    ------------------------- */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .card {
+        padding: 1.5rem;
+      }
+
+      .btn {
+        padding: 10px 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Vault of Codes</h1>
+    <p class="subtitle">My Web Development Assignments</p>
+  </header>
+
+  <main>
+    <section class="assignments">
+      <div class="card">
+        <h2>Assignment 1: Personal Portfolio</h2>
+        <p>A simple HTML/CSS website showcasing my profile, skills, and projects.</p>
+        <a href="A1-portfolio/index.html" class="btn">View Project</a>
+      </div>
+
+      <div class="card">
+        <h2>Assignment 2: Interactive Recipe Card</h2>
+        <p>A responsive, animated recipe card for a cake using HTML, CSS, and JavaScript.</p>
+        <a href="A2-receipeCard/index.html" class="btn">View Project</a>
+      </div>
+
+      <div class="card">
+        <h2>Assignment 3: Interactive Resume Builder</h2>
+        <p>A responsive, animated resume builder using HTML, CSS, and JavaScript.</p>
+        <a href="A3-resumeBuilder/index.html" class="btn">View Project</a>
+      </div>
+
+      <div class="card">
+        <h2>Assignment 4: Interactive Card</h2>
+        <p>A responsive, animated info card built using HTML, CSS, and JavaScript.</p>
+        <a href="A4-card/index.html" class="btn">View Project</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Morya | All rights reserved</p>
+  </footer>
+</body>
+</html>
